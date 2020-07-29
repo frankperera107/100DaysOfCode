@@ -1,0 +1,10 @@
+<input 
+  #input
+  placeholder={{text}}
+>
+<button 
+  class="btn" 
+  (click)="clear(input)"
+  (keydown.enter) = "onSearch(input.value)"
+>Clear
+</button>
