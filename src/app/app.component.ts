@@ -11,4 +11,9 @@ export class AppComponent  {
   test(){
     console.log('testing');
   }
+
+  onSearch(searchEventEmit){
+    //alert(`From the app component: ${searchEventEmit}`);
+    alert("Event emitted : "+searchEventEmit);
+  }
 }

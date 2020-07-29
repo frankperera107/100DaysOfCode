@@ -1,10 +1,10 @@
 <input 
   #input
   placeholder={{text}}
+  (keydown.enter) = "onSearch(input.value)"
 >
 <button 
   class="btn" 
   (click)="clear(input)"
-  (keydown.enter) = "onSearch(input.value)"
 >Clear
 </button>

@@ -1,6 +1,11 @@
 <hello name="{{ name }}"></hello>
 <search-box 
-  [searchBoxPlaceholder]="Custom placeholder"
+  [searchBoxPlaceholder]="'Custom placeholder'"
+  (search)="onSearch($event)"
   (click)="test()" 
 >
 </search-box>
+
+<div>
+  
+</div>

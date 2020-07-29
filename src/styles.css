@@ -1,1 +1,12 @@
-/* Add application styles & imports to this file! */
+.collapsible-indicator {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.collapsible-section {
+  padding: 0 1.6rem 1.6rem 1.6rem;
+}
+
+.collapsed .collapsible-section {
+  display: none;
+}

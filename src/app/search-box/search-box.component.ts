@@ -1,4 +1,4 @@
-import { Component,Input } from '@angular/core';
+import { Component,Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector : 'search-box',
@@ -11,13 +11,16 @@ export class SearchBoxComponent{
   @Input('searchBoxPlaceholder')
   text = 'Type your search';
 
+  @Output()
+  search = new EventEmitter();
+
   clear(input){
     console.log('Clear ');
     input.value = '';
   }
 
   onSearch(searchText){
-    alert(searchText);
+    this.search.emit(searchText);
   }
 
 }
